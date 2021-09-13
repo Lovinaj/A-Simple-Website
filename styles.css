@@ -1,0 +1,143 @@
+ html, body{
+    width: 100%;
+}
+
+ body{
+    background-color: rgb(207, 194, 219);
+    font-family: 'Times New Roman', Times, serif;
+}
+ p {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 20px;
+  }
+  h1{
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+ header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a493c0;
+    padding: 10px;
+  }
+  
+  nav a:visited,
+  nav a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  
+  nav > ul {
+    display: inline; 
+    padding: 0;
+  }
+  
+  nav > ul > li {
+    display: inline-block; 
+    list-style: none;
+    margin: 0 5px 0 5px;
+  }
+  main {
+    display: flex;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 50%;
+    width: 100%; 
+  }
+  aside {
+  margin-left: 2%;
+  }
+  .banner{
+    max-width: 100%;
+  }
+  aside> img{
+    border-radius: 100px;
+  }
+  aside, article{
+    padding: 2em;
+  }
+  article> img{
+      display: flex;
+  }
+  .contact{
+    position: relative;
+    width: 100%;
+
+  }
+  
+   .column-desktop {
+    display: flex;
+  } 
+  p> a{
+    text-decoration: none;
+
+  }
+  a:hover{
+    background-color:rgb(167, 130, 39);
+  }
+  button:hover{
+    background-color: burlywood;
+  }
+ 
+  
+  @media only screen and (max-width: 600px) {
+
+    aside {
+        text-align: center;
+      }
+     main {
+        display: block;
+        width: 100%;
+      } 
+    article {
+        width: 100%;
+      }
+      .column-desktop {
+        display: block;
+      
+      }
+      .column{
+        display: flex;
+      } 
+      .price{
+         padding: 0px 0px 0px 70px; 
+         color: gold;
+      }
+
+    }
+
+  .pie{
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+      border: solid 1px gold;
+      border-radius: 10px;
+      background-color:#fff;
+      display: block;
+  }
+  .pie img {
+    width: 100%;
+  }
+  
+  .pie .title {
+    font-weight: bold;
+  }
+  .pie .price{
+    padding: 0px 0px 0px 70px; 
+    color: gold ;
+  }
+  .pie button {
+    background-color: rgb(241, 207, 12);
+    padding: 10px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+
+  

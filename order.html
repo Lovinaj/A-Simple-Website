@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">home</a> </li>
+                <li><a href="pies.html">pies</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <aside><img src="images/logo.jpg" alt="Joes Pie Shop" /></aside>
+  
+        <article>
+          <h1>Order</h1>
+            <form action="http://localhost:3000/api/post" method="POST">
+            <div class="input-group">
+              <div><label for="first-name">First name</label></div>
+              <div><input type="text" name="first-name" id="first-name" /></div>
+            </div>
+  
+            <div class="input-group">
+              <div><label for="last-name">Last name</label></div>
+              <div><input type="text" name="last-name" id="last-name" /></div>
+            </div>
+  
+            <div class="input-group">
+              <div><label for="address">Address</label></div>
+              <div><input type="text" name="address" id="address" /></div>
+            </div>
+
+            <div><label for="phone-number">Phone number</label></div>
+            <div><input type="text" name="last-name" id="last-name" /></div>
+          </div>
+
+  
+            <div class="input-group">
+              <div><label for="Town">Town</label></div>
+              <div>
+                <select name="location" id="location">
+                  <option value="" selected>[ Select one ]</option>
+                  <option value="Abraka">Abraka</option>
+                  <option value="Asaba">Asaba</option>
+                  <option value="Ekpan">Ekpan</option>
+                  <option value="Jeddo">Jeddo</option>
+                  <option value="Sapele">Sapelle</option>
+                  <option value="Ughelli">Ughelli</option>
+                  <option value="warri">Warri</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group">
+              <div><label for="comments">Comments</label></div>
+              <div>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+  
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Order" />
+          </form>
+        </article>
+      </main>
+</body>
+</html>
